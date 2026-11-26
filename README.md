@@ -33,4 +33,4 @@ pnpm start
 
 Le build crée un site statique dans `out/`, prêt à être publié sur Netlify. `pnpm start` permet de vérifier l’export localement.
 
-Avant publication, configurer les liens « Prendre RDV » et compléter les mentions légales.
+L’URL canonique et le sitemap sont configurés pour `https://lesoleilthai.fr`. Avant publication, vérifier les informations des mentions légales.

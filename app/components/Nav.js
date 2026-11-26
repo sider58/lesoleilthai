@@ -48,7 +48,7 @@ const Nav = () => {
             rounded-full border-2 border-gold bg-card px-4 py-1
             transition-colors hover:text-gold-light
           "
-          href="#"
+          href="https://wa.me/33988561479"
         >
           Prendre RDV
         </a>
@@ -154,7 +154,7 @@ const Nav = () => {
             "
           >
             <a className="py-1" href="#massages" onClick={closeMenu}>Massages</a>
-            <a className="py-1" href="#" onClick={closeMenu}>Prendre RDV</a>
+            <a className="py-1" href="https://wa.me/33988561479" onClick={closeMenu}>Prendre RDV</a>
             <a className="py-1" href="#a-propos" onClick={closeMenu}>A propos</a>
           </nav>
           <Decoration

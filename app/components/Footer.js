@@ -14,13 +14,13 @@ export const SocialPlatforms = () => {
     {
       name: "Facebook",
       icon: "facebook-svgrepo-com.svg",
-      href: "https://www.facebook.com/search/top?q=Le%20Soleil%20Tha%C3%AF%20Meximieux",
+      href: "https://www.facebook.com/share/1Mivc5iLcD/?mibextid=wwXIfr",
       label: "Rechercher Le Soleil Thaï sur Facebook",
     },
     {
       name: "Instagram",
       icon: "instagram-167-svgrepo-com.svg",
-      href: "https://www.instagram.com/explore/search/keyword/?q=Le%20Soleil%20Tha%C3%AF%20Meximieux",
+      href: "https://www.instagram.com/lesoleilthaimassage?knvt=ejJhdzAxdmtjdjE2",
       label: "Rechercher Le Soleil Thaï sur Instagram",
     },
   ];
@@ -110,7 +110,7 @@ const Footer = () => {
           </a>
           <a 
             className="inline-flex min-h-11 items-center max-md:min-h-7" 
-            href="#"
+            href="tel:+33762541417"
           >
             Prendre RDV
           </a>
@@ -186,6 +186,9 @@ const Footer = () => {
             <p>Le Soleil Thaï — Massage et bien-être</p>
             <p className="mt-4">
               Salon exploité par Kay Xayavongsa.<br />33 Rue de Lyon, Meximieux (01800)
+            </p>
+            <p className="mt-4">
+              SIRET: 92159558300011
             </p>
             <p className="mt-4">
               <a 
