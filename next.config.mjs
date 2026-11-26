@@ -6,6 +6,9 @@ const nextConfig = {
     // Les WebP sont servis directement depuis public/images.
     unoptimized: true,
   },
+  experimental: {
+    agentUpgrade: "security",
+  },
   turbopack: {
     rules: {
       "*.css": {
