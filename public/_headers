@@ -1,0 +1,10 @@
+# Les noms de ces fichiers changent dès que leur contenu change.
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Les images gardent leur nom : vérifier leur version avant de réutiliser le cache.
+/images/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable

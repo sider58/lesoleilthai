@@ -1,26 +1,112 @@
+/* Charge Tailwind CSS : utilitaires et styles de base utilisés par les composants. */
 @import "tailwindcss";
+@import "./fonts.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Palette et typographies partagées ; ces variables créent les utilitaires Tailwind associés. */
+@theme {
+  --color-navy: #061b2c;
+  --color-card: #1a2f46;
+  --color-gold: #cdbf6c;
+  --color-gold-light: #ddd087;
+  --color-browny: #c79856;
+  --color-dark: #090b0d;
+  --font-sans: "Sarabun", Arial, sans-serif;
+  --font-heading: "Taviraj", Georgia, serif;
+  --font-label: "Golos Text", Arial, sans-serif;
+  --font-price: "Prompt", Arial, sans-serif;
+  --breakpoint-832: 52rem; 
+  --breakpoint-xs: 30rem; /* 480px */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.landing-animation {
+  animation: entrance var(--landing-delay, 1s) cubic-bezier(0.22, 1, 0.36, 1) 200ms both;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes entrance {
+  from {
+    opacity: 0;
+    transform: var(--landing-tyx);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.scroll-fade-transition {
+  opacity: 0;
+  transform: var(--scroll-tyx, translateY(30px));
+  transition:
+    opacity 650ms ease-out,
+    transform 750ms cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: var(--scroll-delay, 0ms);
+}
+
+.scroll-fade-transition.is-visible {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.icon-gold-filter {
+  filter:
+    brightness(0) saturate(100%) invert(83%) sepia(21%) saturate(780%)
+    hue-rotate(8deg) brightness(92%) contrast(89%);
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    scroll-padding-top: 1.5rem;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-navy);
+    color: white;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body a {
+    text-decoration: none;
+  }
+
+  body button {
+    cursor: pointer;
+    font: inherit;
+  }
+
+  body :focus-visible {
+    border-radius: 0.25rem;
+    outline: 3px solid #f1d472;
+    outline-offset: 6px;
+  }
+
+  ::selection {
+    background-color: var(--color-gold);
+    color: var(--color-navy);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  html * {
+    transition: none;
+  }
+
+  .landing-animation {
+    animation: none;
+  }
+
+  .scroll-fade-transition,
+  .scroll-fade-transition.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
