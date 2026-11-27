@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lesoleilthai.fr/sitemap.xml

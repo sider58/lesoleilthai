@@ -148,7 +148,7 @@ const Massages = () => {
             max-md:w-full max-md:border-[5px] max-md:px-3 max-md:py-6
             max-md:text-[clamp(26px,8.5vw,36px)]
           "
-          href="#"
+          href="https://wa.me/33988561479"
           aria-label="Prendre rendez-vous"
         >
           Prendre RDV

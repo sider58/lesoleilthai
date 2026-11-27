@@ -1,11 +1,42 @@
 import "./globals.css";
 
-// Titre et description ajoutés par Next.js aux métadonnées de la page.
+const title = "Massage thaï traditionnel à Meximieux | Le Soleil Thaï";
+const description =
+  "Découvrez les massages thaïlandais, soins et forfaits du Soleil Thaï à " +
+  "Meximieux. Consultez les tarifs et prenez rendez-vous par téléphone.";
+
 export const metadata = {
-  title: "Le Soleil Thaï | Massage traditionnel à Meximieux",
-  description:
-    "Découvrez les massages thaïlandais, soins et forfaits du Soleil Thaï à " +
-    "Meximieux. Retrouvez nos tarifs et prenez rendez-vous au 07 62 54 14 17.",
+  metadataBase: new URL("https://lesoleilthai.fr"),
+  title,
+  description,
+  applicationName: "Le Soleil Thaï",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title,
+    description,
+    siteName: "Le Soleil Thaï",
+    locale: "fr_FR",
+    type: "website",
+    url: "https://lesoleilthai.fr",
+  },
+  twitter: {
+    card: "summary",
+    title,
+    description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 // Structure HTML commune : la langue française aide les lecteurs d’écran.
