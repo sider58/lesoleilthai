@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Site vitrine : HTML et images prêts à servir, sans fonction Netlify.
+  // Site vitrine statique : HTML et images prêts à servir.
   output: "export",
   images: {
     // Les WebP sont servis directement depuis public/images.
