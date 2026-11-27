@@ -1,6 +1,6 @@
 import "./globals.css";
 
-const title = "Massage thaï traditionnel à Meximieux | Le Soleil Thaï";
+const title = "Le Soleil Thaï | Meximieux";
 const description =
   "Découvrez les massages thaïlandais, soins et forfaits du Soleil Thaï à " +
   "Meximieux. Consultez les tarifs et prenez rendez-vous par téléphone.";
