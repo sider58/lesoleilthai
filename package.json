@@ -6,7 +6,8 @@
     "assets:images": "node scripts/prepare-assets.mjs",
     "dev": "next dev",
     "build": "next build",
-    "start": "node scripts/serve-static.mjs",
+    "build:cloudflare": "opennextjs-cloudflare build",
+    "start": "next start",
     "lint": "eslint",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
